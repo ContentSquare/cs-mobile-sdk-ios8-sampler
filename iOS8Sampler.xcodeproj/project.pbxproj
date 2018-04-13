@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		267B3AA3207F981900050100 /* ContentSquare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267B3AA2207F981900050100 /* ContentSquare.framework */; };
-		267B3AA4207F981900050100 /* ContentSquare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 267B3AA2207F981900050100 /* ContentSquare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26FAF7CC2080BE7900317DF6 /* ContentSquare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26FAF7C92080BE7200317DF6 /* ContentSquare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A1E8E9C1BA060D700CAA287 /* MasterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E8E9B1BA060D700CAA287 /* MasterViewCell.swift */; };
 		8A308E2419BDADB9007C7315 /* UserNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A308E2219BDADB9007C7315 /* UserNotificationViewController.m */; };
 		8A308E2519BDADB9007C7315 /* UserNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A308E2319BDADB9007C7315 /* UserNotificationViewController.xib */; };
@@ -117,6 +116,23 @@
 		8AE7B7F519A1C4F000E0C6EB /* CodeGeneratorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE7B7F319A1C4F000E0C6EB /* CodeGeneratorViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		26FAF7C82080BE7200317DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26FAF7C32080BE7200317DF6 /* ContentSquare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A0BFC1D1F14FC9D004E88D6;
+			remoteInfo = ContentSquare;
+		};
+		26FAF7CA2080BE7200317DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26FAF7C32080BE7200317DF6 /* ContentSquare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A0BFC261F14FC9D004E88D6;
+			remoteInfo = ContentSquareTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		267B3AA5207F981900050100 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -124,7 +140,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				267B3AA4207F981900050100 /* ContentSquare.framework in Embed Frameworks */,
+				26FAF7CC2080BE7900317DF6 /* ContentSquare.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +148,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		267B3AA2207F981900050100 /* ContentSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContentSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FAF7C32080BE7200317DF6 /* ContentSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ContentSquare.xcodeproj; path = ../../ContentSquare.xcodeproj; sourceTree = "<group>"; };
 		3598D5121FD6E0C700603031 /* ContentSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContentSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1E8E9B1BA060D700CAA287 /* MasterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewCell.swift; sourceTree = "<group>"; };
 		8A308E2119BDADB9007C7315 /* UserNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNotificationViewController.h; sourceTree = "<group>"; };
@@ -310,13 +326,21 @@
 				8A40F6B819CA528A005F34A3 /* Metal.framework in Frameworks */,
 				8A8D0CAF19C9A161009E3448 /* HealthKit.framework in Frameworks */,
 				8A8D0CAD19C9A129009E3448 /* HomeKit.framework in Frameworks */,
-				267B3AA3207F981900050100 /* ContentSquare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26FAF7C42080BE7200317DF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26FAF7C92080BE7200317DF6 /* ContentSquare.framework */,
+				26FAF7CB2080BE7200317DF6 /* ContentSquareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8A308E2019BDADA3007C7315 /* UserNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,7 +593,7 @@
 		8AA4B9E819A175F4006BC800 = {
 			isa = PBXGroup;
 			children = (
-				267B3AA2207F981900050100 /* ContentSquare.framework */,
+				26FAF7C32080BE7200317DF6 /* ContentSquare.xcodeproj */,
 				8AE7B7EB19A1B8D700E0C6EB /* Resouces */,
 				8AA4BA2419A18E9B006BC800 /* libs */,
 				8AA4B9F319A175F4006BC800 /* iOS8Sampler */,
@@ -937,12 +961,35 @@
 			mainGroup = 8AA4B9E819A175F4006BC800;
 			productRefGroup = 8AA4B9F219A175F4006BC800 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26FAF7C42080BE7200317DF6 /* Products */;
+					ProjectRef = 26FAF7C32080BE7200317DF6 /* ContentSquare.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8AA4B9F019A175F4006BC800 /* iOS8Sampler */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26FAF7C92080BE7200317DF6 /* ContentSquare.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ContentSquare.framework;
+			remoteRef = 26FAF7C82080BE7200317DF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26FAF7CB2080BE7200317DF6 /* ContentSquareTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ContentSquareTests.xctest;
+			remoteRef = 26FAF7CA2080BE7200317DF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8AA4B9EF19A175F4006BC800 /* Resources */ = {
